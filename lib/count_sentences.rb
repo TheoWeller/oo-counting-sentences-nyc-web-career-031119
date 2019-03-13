@@ -30,7 +30,8 @@ class String
     else
       sentence_count += 0
     end
-    sentence_count
+
   end
 end
+sentence_count
 end
