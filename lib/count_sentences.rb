@@ -28,7 +28,7 @@ class String
     elsif word.sentence?
       sentence_count +=1
     else
-      sentence_count
+      sentence_count += 0
     end
     sentence_count
   end
