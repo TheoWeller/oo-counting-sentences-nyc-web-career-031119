@@ -19,7 +19,8 @@ class String
 
   def count_sentences
     sentence_count = 0
-    case self.split.each do |word|
+    self.split.each do |word|
+      case word
     when word.exclamation?
       sentence_count +=1
     when word.question?
