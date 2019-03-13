@@ -19,12 +19,12 @@ class String
 
   def count_sentences
     sentence_count = 0
-    case self.split
-    when "."
+    case self.split.each do |word|
+    when word.exclamation?
       sentence_count +=1
-    when "!"
+    when word.question?
       sentence_count +=1
-    when "?"
+    when word.sentence?
     sentence_count +=1
     end
   end
