@@ -32,6 +32,6 @@ class String
     end
 
   end
+  sentence_count
 end
-sentence_count
 end
