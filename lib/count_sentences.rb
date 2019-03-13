@@ -27,6 +27,8 @@ class String
       sentence_count +=1
     when word.sentence?
     sentence_count +=1
+  else word.last = "..."
+    sentence_count
     end
   end
 end
