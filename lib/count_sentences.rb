@@ -18,6 +18,14 @@ class String
   end
 
   def count_sentences
-
+    sentence_count = 0
+    case self.split
+    when "."
+      sentence_count +=1
+    when "!"
+      sentence_count +=1
+    when "?"
+    sentence_count +=1
+    end
   end
 end
