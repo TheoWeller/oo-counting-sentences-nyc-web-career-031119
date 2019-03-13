@@ -26,8 +26,8 @@ class String
       sentence_count +=1
     elsif word.sentence?
       sentence_count +=1
-    else word.last(3) = "."
-    sentence_count
+    else
+      sentence_count
     end
   end
 end
