@@ -20,14 +20,14 @@ class String
   def count_sentences
     sentence_count = 0
     self.split.each do |word|
-      case word
-    when word.exclamation?
+
+    if word.exclamation?
       sentence_count +=1
-    when word.question?
+    elsif word.question?
       sentence_count +=1
-    when word.sentence?
-    sentence_count +=1
-    else word.last = "..."
+    elsif word.sentence?
+      sentence_count +=1
+    else word.last(3) = "..."
     sentence_count
     end
   end
